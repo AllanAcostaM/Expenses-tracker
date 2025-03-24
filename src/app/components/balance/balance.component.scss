@@ -1,12 +1,13 @@
-@use "../../../styles.scss" as s;
+@use "../../../styles/variables/variables" as v;
+
 
 .balance {
-  background-image: s.$gradient-bg;
-  box-shadow: s.$main-shadow;
-  border-radius: s.$main-border-radius;
+  background-image: v.$gradient-bg;
+  box-shadow: v.$main-shadow;
+  border-radius: v.$main-border-radius;
   padding: 1.5625rem;
-  color: s.$white;
-  font-family: s.$font-family;
+  color: v.$white;
+  font-family: v.$font-family;
 
   &__header {
     margin-bottom: 0.9375rem;
@@ -36,12 +37,12 @@
 }
 
 .no-balance__error {
-  font-family: s.$font-family;
+  font-family: v.$font-family;
   font-weight: 400;
   text-align: center;
-  color: s.$error;
-  background-color: s.$error-light;
-  border: 1px solid s.$error;
+  color: v.$error;
+  background-color: v.$error-light;
+  border: 1px solid v.$error;
   border-radius: 0.625rem;
   padding: 0.9375rem;
 }

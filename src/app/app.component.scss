@@ -1,7 +1,7 @@
-@use "../styles" as s;
+@use "../styles/variables/variables" as v;
 
 .container {
-  background: s.$main-bg-color;
+  background: v.$main-bg-color;
   width: 100vw;
   height: 100vh;
 }

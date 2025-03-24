@@ -1,4 +1,4 @@
-@use "../../../styles.scss" as s;
+@use "../../../styles/variables/variables" as v;
 
 .transactions {
   display: flex;
@@ -6,12 +6,12 @@
   gap: 0.625rem;
 
   &__empty {
-    font-family: s.$font-family;
+    font-family: v.$font-family;
     font-weight: 400;
     text-align: center;
-    color: s.$error;
-    background-color: s.$error-light;
-    border: 1px solid s.$error;
+    color: v.$error;
+    background-color: v.$error-light;
+    border: 1px solid v.$error;
     border-radius: 0.625rem;
     padding: 0.9375rem;
   }
@@ -22,14 +22,14 @@
     align-items: center;
     padding: 0.5rem;
     h3 {
-      font-family: s.$font-family;
-      color: s.$gray;
+      font-family: v.$font-family;
+      color: v.$gray;
       font-weight: 600;
     }
     a {
-      font-family: s.$font-family;
+      font-family: v.$font-family;
       text-decoration: none;
-      color: s.$link-color;
+      color: v.$link-color;
     }
   }
 }

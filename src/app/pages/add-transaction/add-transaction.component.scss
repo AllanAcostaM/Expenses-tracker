@@ -1,4 +1,4 @@
-@use "../../../styles" as s;
+@use "../../../styles/variables/variables" as v;
 
 .add-transaction {
   display: flex;
@@ -8,10 +8,10 @@
   padding: 3.125rem;
 
   h2 {
-    font-family: s.$font-family;
+    font-family: v.$font-family;
     font-weight: 500;
     text-align: center;
-    color: s.$gray;
+    color: v.$gray;
   }
 
   &__form {
@@ -27,30 +27,30 @@
     border-radius: 9999px;
     padding: 0.3rem 2rem;
     width: 20rem;
-    font-family: s.$font-family;
+    font-family: v.$font-family;
     font-size: 3rem;
     font-weight: 300;
-    color: s.$link-color;
+    color: v.$link-color;
   }
 
   &__type {
     display: flex;
     label {
-      font-family: s.$font-family;
+      font-family: v.$font-family;
       font-size: 1.2rem;
       margin-left: 0.4rem;
       margin-right: 1.5rem;
-      color: s.$gray;
+      color: v.$gray;
     }
 
     input[type="radio"] {
       // Reset appearance
       appearance: none;
       // Normal state
-      background-color: s.$white;
+      background-color: v.$white;
       width: 1.2rem;
       height: 1.2rem;
-      border: 1px solid s.$link-color;
+      border: 1px solid v.$link-color;
       border-radius: 50%;
       transform: translateY(0.2rem);
       // Display check mark
@@ -62,7 +62,7 @@
         height: 0.8rem;
         border-radius: 50%;
         transform: scale(0);
-        box-shadow: inset 1rem 1rem s.$link-color;
+        box-shadow: inset 1rem 1rem v.$link-color;
       }
       &:checked::before {
         transform: scale(1);
@@ -76,41 +76,41 @@
     outline: none;
     border-radius: 1.25rem;
     padding: 0.5rem 1rem;
-    font-family: s.$font-family;
+    font-family: v.$font-family;
     font-size: 1.3rem;
     font-weight: 300;
-    color: s.$gray;
+    color: v.$gray;
   }
 
   button {
     border: none;
     outline: none;
-    font-family: s.$font-family;
+    font-family: v.$font-family;
     font-size: 1.5rem;
     font-weight: 300;
     padding: 0.8rem 1.8rem;
     border-radius: 1.25rem;
-    background-image: s.$gradient-bg;
-    color: s.$white;
+    background-image: v.$gradient-bg;
+    color: v.$white;
     cursor: pointer;
   }
 
   a {
-    font-family: s.$font-family;
+    font-family: v.$font-family;
     text-decoration: none;
-    color: s.$link-color;
+    color: v.$link-color;
   }
 
   input.ng-invalid.ng-touched,
   select.ng-invalid.ng-touched {
-    border: 1px solid s.$error;
+    border: 1px solid v.$error;
   }
 
   &__error-message {
-    font-family: s.$font-family;
+    font-family: v.$font-family;
     font-style: italic;
     font-size: 0.8rem;
-    color: s.$remove;
+    color: v.$remove;
   }
 
   // Chrome, Edge, Brave, Opera, Safari

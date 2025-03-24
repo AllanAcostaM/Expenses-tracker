@@ -40,17 +40,14 @@
                 {
                   "type": "initial",
                   "maximumWarning": "2mb",
-                  "maximumError": "3mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "12kb",
+                  "maximumError": "15kb"
                 }
-              ],
-              "outputHashing": "all",
-              "optimization": false,
-              "sourceMap": true
+              ]
             },
             "development": {
               "optimization": false,

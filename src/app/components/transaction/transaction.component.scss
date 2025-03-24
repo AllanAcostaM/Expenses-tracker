@@ -1,14 +1,14 @@
-@use "../../../styles" as s;
+@use "../../../styles/variables/variables" as v;
 
 .transaction {
-  background-color: s.$white;
-  border-radius: s.$main-border-radius;
-  font-family: s.$font-family;
+  background-color: v.$white;
+  border-radius: v.$main-border-radius;
+  font-family: v.$font-family;
   padding: 0.75rem 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: s.$main-shadow;
+  box-shadow: v.$main-shadow;
 
   &__title {
     display: flex;
@@ -37,25 +37,25 @@
     border-radius: 50%;
     text-align: center;
     &-income {
-      color: s.$income-icon-color;
-      background-color: s.$income-icon-bg-color;
+      color: v.$income-icon-color;
+      background-color: v.$income-icon-bg-color;
     }
     &-expense {
-      color: s.$expense-icon-color;
-      background-color: s.$expense-icon-bg-color;
+      color: v.$expense-icon-color;
+      background-color: v.$expense-icon-bg-color;
     }
   }
   &__remove {
-    color: s.$remove;
+    color: v.$remove;
     font-size: 0.9rem;
     vertical-align: middle;
     cursor: pointer;
     margin-left: 0.3125rem;
   }
   &__amount-expense {
-    color: s.$amount-expense-color;
+    color: v.$amount-expense-color;
   }
   &__amount-income {
-    color: s.$amount-income-color;
+    color: v.$amount-income-color;
   }
 }
