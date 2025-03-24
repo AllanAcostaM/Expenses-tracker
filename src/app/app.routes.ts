@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 
-import { AboutComponent } from './pages/about/about.component';
 import { AddTransactionComponent } from './pages/add-transaction/add-transaction.component';
 import { HomeComponent } from './pages/home/home.component';
 
