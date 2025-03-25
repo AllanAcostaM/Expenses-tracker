@@ -18,9 +18,9 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideHttpClient(withFetch()),
     // Inicializa Firebase con la configuración de tu entorno
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    // Configura Firestore
-    provideFirestore(() => getFirestore()),
+    // provideFirebaseApp(() => initializeApp(environment.firebase)),
+    // // Configura Firestore
+    // provideFirestore(() => getFirestore()),
     // Agrega la inicialización de AngularFire en versión compat para proveer el token requerido
     importProvidersFrom(AngularFireModule.initializeApp(environment.firebase))
   ],
